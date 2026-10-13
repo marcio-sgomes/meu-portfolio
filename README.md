@@ -1,16 +1,33 @@
-# React + Vite
+# Meu Portfólio (versão inicial)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Primeiro esboço do meu portfólio pessoal em React, criado em maio de 2026 para experimentar React 19 com Tailwind CSS 4 e testes com Vitest.
 
-Currently, two official plugins are available:
+> 📦 **Projeto de estudo — não recebe mais atualizações.**
+> A versão atual do portfólio está em [portfolio-marcio-gomes](https://github.com/marcio-sgomes/portfolio-marcio-gomes) (publicada em <https://portfolio-marcio-gomes.vercel.app>).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## O que tem aqui
 
-## React Compiler
+- Projeto Vite + React com o Tailwind CSS 4 configurado pelo plugin `@tailwindcss/vite`.
+- Uma única tela com o título "Meu Portfólio Profissional" e uma frase de boas-vindas.
+- Um teste de exemplo (`src/App.test.jsx`) com Vitest + React Testing Library, comentado passo a passo (preparação, ação e validação).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias
 
-## Expanding the ESLint configuration
+- React 19 e Vite
+- Tailwind CSS 4
+- Vitest, React Testing Library e jsdom
+- ESLint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como rodar
+
+Pré-requisito: [Node.js](https://nodejs.org/) 20 ou superior.
+
+```bash
+git clone https://github.com/marcio-sgomes/meu-portfolio.git
+cd meu-portfolio
+npm install
+npm run dev     # abre em http://localhost:5173
+npm run test    # roda o teste de exemplo (modo observação; Ctrl+C para sair)
+```
+
+Outros scripts: `npm run build` (gera `dist/`), `npm run preview` e `npm run lint`.
